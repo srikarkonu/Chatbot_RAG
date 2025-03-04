@@ -12,6 +12,10 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 import base64
 import json
 from langchain.schema import HumanMessage
+from streamlit_cors import CORS  # CORS handling for cross-origin requests
+
+# Enable CORS
+CORS(st, allow_origins=["*"])
 
 # Logging setup
 logging.basicConfig(
